@@ -1,0 +1,16 @@
+couleurs :
+	bleu clair : #4FAFC2;
+	gris foncé : #777;
+	gris clair : #ccc;
+
+bannière en bleu foncé
+Site en une page avec ancre
+
+header avec menu : Accueil Astuces CV A propos
+
+Page CV : - MAJ CV sur DoYouBuzz et Linkedin
+          - Page CV : écrire CV avec précision + lien de téléchargement pdf
+
+footer avec les réseaux sociaux
+
+astuces : chrome flex 

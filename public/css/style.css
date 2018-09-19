@@ -1,0 +1,470 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* global styles */
+html {
+    background-image: url("../images/bg-picture.jpg");
+}
+
+body {
+    font-family: "PT Sans", Arial;
+    font-size: 62.5%; /* 1em = 10px */
+}
+
+h1 {
+    display : none
+}
+
+h2 {
+    border-left : solid 3px #4FAFC2;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 3em;
+    font-weight: 400;
+    color : #2a2a2a;
+}
+
+h3 {
+    border-left : solid 3px #4FAFC2;
+    padding: 5px;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 400;
+    color : #2a2a2a;
+}
+
+p, label{
+    font-size: 1.6em;
+    color : #404040;
+}
+
+a {
+   text-decoration: none;
+    color : #777777;
+    display : block;
+}
+
+section {
+    margin: 80px 0px 40px 0px;
+    padding : 0 10%;
+}
+
+#wrapper {
+    width : 100%;
+}
+
+/*header*/
+header {
+    background-color : #000000;
+    font-size: 1.3em;
+    font-weight: bold;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+    height:45px;
+
+}
+
+header nav {
+    display: flex;
+    text-transform: uppercase;
+    margin-left: 10%;
+    height: 100%;
+}
+
+header nav #menu-burger {
+    display: none;
+
+}
+
+header nav #menu-burger a {
+    padding-top: 6px;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.overlay {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+header nav #menu-burger div {
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 6px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display : flex;
+    height: 35px;
+    margin-top: 4px;
+    padding-top: 2px;
+    margin-right: 10%;
+}
+
+header nav ul li#home {
+    margin-right: 1%;
+}
+
+header nav ul li#home:hover, header nav ul li#home:active{
+    box-shadow: none;
+}
+
+header nav ul li:hover, header nav ul li:active {
+    box-shadow: inset 0px 2px #598dbb;
+}
+
+header nav ul li#home a {
+    text-align: left;
+}
+
+header nav ul li a i.fa-home {
+    font-size: 22px !important;
+    width: 1rem;
+}
+
+header nav ul li a {
+    white-space: nowrap;
+    margin : auto;
+    color : #FFFFFF;
+    width: 6rem;
+    text-align: center;
+}
+
+header nav ul li a:hover, header nav ul li a:focus {
+    color : #DDDDDD;
+}
+
+/* Content styles */
+.content {
+    margin-bottom: 40px;
+}
+
+.content div#presentation figure {
+    width : 100%;
+}
+
+.content div#presentation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.content div#presentation p {
+    margin-left: 2%;
+    line-height: 18px;
+}
+
+.content p a {
+    display : inline;
+    color : #4FAFC2;
+    font-weight: bold;
+}
+
+.content p a:hover{
+    text-decoration: underline;
+}
+
+.realisations {
+    margin : 20px 0;
+    display : flex;
+    justify-content: space-between;
+}
+
+ #rea1, #rea2, #rea3, #rea4 {
+    height : 300px;
+    width :25%;
+    cursor : pointer;
+}
+
+.front {
+    border : 2px solid #000000;
+    border-radius: 3px;
+    background-color: #cecece;
+}
+
+.back {
+    border : 2px solid #000000;
+    border-radius: 3px;
+    background-color: #efeef3;
+}
+
+.front h4 {
+    height : 18px;
+    line-height: 18px;
+    width : 20%;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #fdfdff;
+    text-align: center;
+    margin : 5px auto;
+    color : #404040;
+}
+
+.front h5, .back h5 {
+    height : 30px;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: #fdfdff;
+    text-align: center;
+    line-height: 30px;
+    color : #404040;
+}
+
+.front figure {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 100%;
+    text-align: center;
+}
+
+.front figure img {
+    max-width: 100%;
+    max-height: 165px;
+}
+
+
+
+.front p {
+    padding : 3px;
+    font-size: 1.3em;
+}
+
+.back ul {
+    list-style-type: circle;
+    margin: 3px auto;
+    padding-top: 10px;
+    padding-left: 30px;
+    overflow: hidden;
+    font-size: 1.4em;
+    height : 180px;
+}
+
+.back a {
+    display : block;
+    color: #fff;
+    background-color: #598dbb;
+    border: 1px solid #598dbb;
+    /* padding: 0.3rem 0.1rem; */
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    border-radius: 0.70rem;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 80%;
+    margin : 5px auto;
+}
+
+.back a:hover {
+    background-color: #5eb5e0;
+    border : 1px solid #5eb5e0;
+}
+
+
+form #contact {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+form #contact #identity, form #contact #message{
+    display: flex;
+    flex-direction: column;
+    height : auto;
+    width: 50%;
+}
+
+form #contact input, form #contact textarea {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 80%;
+    font-size: 0.95rem;
+    padding-left : 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+form #contact input {
+    height: 38px;
+}
+
+form #contact textarea {
+    height : 92px;
+}
+
+form button {
+    color: #fff;
+    background-color: #598dbb;
+    border : 1px solid #598dbb;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 0.20rem;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5eb5e0;
+    border : 1px solid #5eb5e0;
+}
+
+footer {
+    background-color: #000000;
+    height: 40px;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    display : flex;
+    width: 120px;
+    justify-content: space-around;
+}
+
+footer p {
+    font-size: 1.2em;
+    color: #FFFFFF;
+}
+
+
+
+/*page ok jusqu'à 700px*/
+
+@media screen and (max-width: 700px) {
+    header nav #menu-burger {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p, label {
+        font-size: 1.4em;
+    }
+
+    form #contact {
+        flex-direction: column;
+
+    }
+    form #contact input, form #contact textarea {
+        width: 100%;
+    }
+    form #contact #identity, form #contact #message{
+        width : 100%;
+    }
+
+    .content div#presentation figure {
+        display : none;
+    }
+
+
+
+}

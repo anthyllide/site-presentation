@@ -1,0 +1,13 @@
+home:
+    path: /
+    controller: App\Controller\DefaultController::indexAction
+
+contact:
+    path: /contact
+    controller: App\Controller\ContactController::contactAction
+
+email:
+    path: /contact_success
+    controller: App\Controller\ContactController::successEmailAction
+
+
