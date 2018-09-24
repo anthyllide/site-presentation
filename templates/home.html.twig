@@ -1,118 +1,18 @@
 {% extends "base.html.twig" %}
 {% block content %}
-    <h1>Alexandra Gonzalez, développeuse web</h1>
-    <div class="content">
-        <h2 id="qui">Qui suis-je ?</h2>
-        <div id="presentation">
-            <figure>
-                <img alt="photo auteur" src="{{ asset('images/avatar.jpg') }}" />
-            </figure>
-            <p>Je me suis très tôt intéressée aux ordinateurs. A 8 ans, j'ai commencé à bricoler sur les "486" pour faire fonctionner mes jeux préférés (PACMAN, Prince of Persia...). A l'adolescence, j'ai commencé à apprendre les langages web de programmation. Depuis, cette passion ne m'a plus quitté ! Mes expériences professionnelles m'ont permis de consolider mes connaissances dans ce domaine. En 2016, j'ai repris mes études pour préparer une licence pro MIAW en alternance que j'ai obtenue en juin 2017. Aujourd'hui, je travaille pour le Crédit Agricole des Savoie en tant que gestionnaire des outils digitaux.
-            </p>
-        </div>
-    <div class="content">
-        <h2 id="astuces">Mes réalisations</h2>
-        <p>Découvrez ci-dessous quelques-unes de mes réalisations.</p>
-        <div class="realisations">
-            <div id="rea1">
-                 <div class="front">
-                    <h4>SITE</h4>
-                    <h5>Recettes de cuisine</h5>
-                    <figure>
-                        <img alt="aperçu site recettes cuisine" src="{{ asset('images/popote-alex.jpg') }}" />
-                    </figure>
-                    <p>Le code HTML de ce site est entièrement généré par du Javascript ! Un moteur de recherche permet de trouver rapidement des recettes.</p>
-                 </div>
-                <div class="back" >
-                        <h5>Techno utilisées</h5>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>Javascript (bien sûr !)</li>
-                            <li>JSON</li>
-                        </ul>
-                        <a title ="voir le site" target="blank" href="{{ asset('files/recettes-cuisine/index.html') }}">Voir le site</a>
-                        <a href="https://github.com/anthyllide/Recettes-cuisine" target="blank" title="repository Github">Voir le code source</a>
-                </div>
-            </div>
-            <div id="rea2">
-                <div class="front">
-                    <h4>SITE</h4>
-                    <h5>Gestion photos</h5>
-                    <figure>
-                        <img alt="aperçu accueil boutique en ligne" src="{{ asset('images/album-photos.jpg') }}" />
-                    </figure>
-                    <p>Ce but de ce site est de permettre à l'utilisateur d'uploader des photos et de les classer par thème.</p>
-                </div>
-                <div class="back" >
-                    <h5>Techno utilisées</h5>
-                    <ul>
-                        <li>HTML 5</li>
-                        <li>CSS 3</li>
-                        <li>PHP 5 avec PDO et structure MCV</li>
-                        <li>SQL</li>
-                    </ul>
-                    <a title ="voir le site" target="blank" href="#">Voir le site</a>
-                    <a href="https://github.com/anthyllide/projet_album" target="blank" title="repository Github">Voir le code source</a>
-                </div>
-            </div>       
-            <div id="rea3">
-                <div class="front">
-                    <h4>SITE</h4>
-                    <h5>Boutique en ligne</h5>
-                    <figure>
-                        <img alt="aperçu accueil boutique en ligne" src="{{ asset('images/boutique.jpg') }}" />
-                    </figure>
-                    <p>Cette mini boutique en ligne a été développée avec le framework Symfony 2.8. Un espace administration permet au commerçant de gérer ses articles et ses clients.</p>
-                </div>
-                <div class="back" >
-                    <h5>Techno utilisées</h5>
-                    <ul>
-                        <li>HTML 5</li>
-                        <li>Framework Bootstrap et CSS 3 en sur-couche</li>
-                        <li>PHP 5 et le framework Symfony 2.8</li>
-                        <li>SQL via Doctrine</li>
-                        Remarque : lire le fichier readme pour pouvoir naviguer dans l'espace administration !
-                    </ul>
-                    <a title ="voir le site" target="blank" href="#">Voir le site</a>
-                    <a href="https://github.com/anthyllide/boutiqueEnLigne" target="blank" title="repository Github">Voir le code source</a>
-                </div>
-            </div>               
-        </div>
-        <div class="realisations">
-            <div id="rea4">
-                <div class="front">
-                    <h4>APP</h4>
-                    <h5>Simulateur autonomie Zoé</h5>
-                    <figure>
-                        <img alt="aperçu accueil boutique en ligne" src="{{ asset('images/simulateur-zoe.jpg') }}" />
-                    </figure>
-                    <p>Cette application "hybride" simule l'autonomie de la Zoé de Renault selon plusieurs paramètres. Cette appli est téléchargeable sur le Play Store.</p>
-                </div>
-                <div class="back" >
-                    <h5>Techno utilisées</h5>
-                    <ul>
-                        <li>HTML 5</li>
-                        <li>CSS 3</li>
-                        <li>Javascript</li>
-                        <li>Angular JS</li>
-                        <li>Cordova</li>
-                    </ul>
-                    <a title ="télécharger l'app" target="blank" href="https://play.google.com/store/apps/details?id=xyz.gonzalez.alexandra.autonomieZoe">Télécharger l'app</a>
-                    <a href="https://github.com/anthyllide/App-Autonomie-Renault-Zoe" target="blank" title="repository Github">Voir le code source</a>
-                </div>
-            </div>          
-        </div>
-
-        </div>
-    </div>
-    <div class="content">
-        <h2 id="cv">Mon CV</h2>
-        <p>Téléchargez-le : <a href="{{ asset('files/CV-alexandra-gonzalez.pdf') }}" title="CV Alexandra Gonzalez">alexandra-gonzalez-cv.pdf</a></p>
-    </div>
-    <div class="content">
-        <h2 id="contact">Me contacter</h2>
-        <p>Si vous avez des questions, n'hésitez pas à m'écrire. Je vous répondrai dans les plus brefs délais.</p>
+<h1>Alexandra Gonzalez, développeuse web</h1>
+<div class="content">
+    {% include ("qui.html.twig") %}
+</div>
+<div class="content">
+    {% include ("realisations.html.twig") %}
+</div>
+<div class="content">
+    {% include ("cv.html.twig") %}
+</div>
+<div class="content">
+    <h2 id="contact">Me contacter</h2>
+    <p>Si vous avez des questions, n'hésitez pas à m'écrire. Je vous répondrai dans les plus brefs délais.</p>
             {{ render(controller('App\\Controller\\ContactController::contactAction',{ 'max': 3 })) }}
-    </div>
+</div>
 {% endblock %}

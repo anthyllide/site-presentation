@@ -10,4 +10,8 @@ email:
     path: /contact_success
     controller: App\Controller\ContactController::successEmailAction
 
+mentions-legales:
+    path: /mentions-legales
+    controller: App\Controller\DefaultController::mentionsAction
+
 

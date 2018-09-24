@@ -28,4 +28,8 @@ class DefaultController extends Controller
         return $this->render('home.html.twig');
     }
 
+    public function mentionsAction(){
+    	return $this->render('mentions-legales.html.twig');
+    }
+
 }

@@ -91,6 +91,10 @@ section {
     padding : 0 10%;
 }
 
+strong {
+    font-weight: bold;
+}
+
 #wrapper {
     width : 100%;
 }
@@ -105,7 +109,6 @@ header {
     z-index: 999;
     width: 100%;
     height:45px;
-
 }
 
 header nav {
@@ -259,10 +262,11 @@ header nav ul li a:hover, header nav ul li a:focus {
     justify-content: space-between;
 }
 
- #rea1, #rea2, #rea3, #rea4 {
+.rea {
     height : 300px;
     width :25%;
     cursor : pointer;
+    padding-bottom: 5px;
 }
 
 .front {
@@ -271,10 +275,18 @@ header nav ul li a:hover, header nav ul li a:focus {
     background-color: #cecece;
 }
 
+.front p {
+    text-align: center;
+}
+
 .back {
     border : 2px solid #000000;
     border-radius: 3px;
     background-color: #efeef3;
+}
+
+.back span {
+    font-size: 0.9em;
 }
 
 .front h4 {
@@ -312,8 +324,6 @@ header nav ul li a:hover, header nav ul li a:focus {
     max-height: 165px;
 }
 
-
-
 .front p {
     padding : 3px;
     font-size: 1.3em;
@@ -334,7 +344,6 @@ header nav ul li a:hover, header nav ul li a:focus {
     color: #fff;
     background-color: #598dbb;
     border: 1px solid #598dbb;
-    /* padding: 0.3rem 0.1rem; */
     font-size: 0.8rem;
     line-height: 1.4rem;
     border-radius: 0.70rem;
@@ -410,9 +419,14 @@ footer {
     background-color: #000000;
     height: 40px;
     display: flex;
-    /*flex-direction: column;*/
     justify-content: center;
     align-items: center;
+}
+
+footer a {
+    display: inline;
+    color : #FFFFFF;
+    text-decoration: underline;
 }
 
 footer div {
@@ -426,9 +440,22 @@ footer p {
     color: #FFFFFF;
 }
 
+@media screen and (max-width: 800px) {
+    .realisations {
+        margin : 0px;
+        display : flex;
+        flex-direction: column;
+    }
 
+    .rea {
+        width :100%;
+        margin-bottom: 20px;
+    }
 
-/*page ok jusqu'à 700px*/
+    #mes_realisations + p {
+        margin-bottom: 20px;
+    }
+}
 
 @media screen and (max-width: 700px) {
     header nav #menu-burger {
@@ -464,7 +491,6 @@ footer p {
     .content div#presentation figure {
         display : none;
     }
-
 
 
 }
