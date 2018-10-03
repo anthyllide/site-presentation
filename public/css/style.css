@@ -18,6 +18,7 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -61,16 +62,6 @@ h2 {
     padding: 10px;
     margin-bottom: 30px;
     font-size: 3em;
-    font-weight: 400;
-    color : #2a2a2a;
-}
-
-h3 {
-    border-left : solid 3px #4FAFC2;
-    padding: 5px;
-    margin-left: 10%;
-    margin-bottom: 30px;
-    font-size: 2em;
     font-weight: 400;
     color : #2a2a2a;
 }
@@ -226,6 +217,7 @@ header nav ul li a:hover, header nav ul li a:focus {
     color : #DDDDDD;
 }
 
+
 /* Content styles */
 .content {
     margin-bottom: 40px;
@@ -255,6 +247,8 @@ header nav ul li a:hover, header nav ul li a:focus {
 .content p a:hover{
     text-decoration: underline;
 }
+
+/* Blocs réalisation */
 
 .realisations {
     margin : 20px 0;
@@ -361,7 +355,72 @@ header nav ul li a:hover, header nav ul li a:focus {
     border : 1px solid #5eb5e0;
 }
 
+/* Blocs CV */
 
+.cvBloc {
+    width: 100%;
+    border : 1px solid #ced4da;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    color : #404040;
+    margin-bottom: 20px;
+}
+
+.cvBloc div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 5px 1%;
+}
+
+.cvBloc h3 {
+    background-color: #efeef3;
+    height : 30px;
+    font-size: 1.8em;
+    line-height: 30px;
+    padding-left: 1%;
+    margin-bottom: 20px;
+}
+
+.cvBloc h4 {
+    color : #4FAFC2;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.cvBloc h5 {
+    font-size: 1.3em;
+}
+
+.cvBloc ul, .cvBloc p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.cvBloc ul li {
+    position: relative;
+    margin-left: 2.5%;
+    margin-bottom: 5px;
+}
+
+.cvBloc ul li:before {
+    font-family: FontAwesome;
+    content: "\f0da";
+    position: absolute;
+    left: -12px;
+    top: 0px;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.cvBloc div i.fa-star {
+    font-size : 0.8em;
+    margin-left: 0.2%;
+    color: #4FAFC2;
+}
+
+/* Bloc contact */
 form #contact {
     display: flex;
     margin: 20px 0;
@@ -415,6 +474,7 @@ form button:hover {
     border : 1px solid #5eb5e0;
 }
 
+/* FOOTER */
 footer {
     background-color: #000000;
     height: 40px;
@@ -438,59 +498,4 @@ footer div {
 footer p {
     font-size: 1.2em;
     color: #FFFFFF;
-}
-
-@media screen and (max-width: 800px) {
-    .realisations {
-        margin : 0px;
-        display : flex;
-        flex-direction: column;
-    }
-
-    .rea {
-        width :100%;
-        margin-bottom: 20px;
-    }
-
-    #mes_realisations + p {
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    header nav #menu-burger {
-        display: block;
-    }
-
-    header nav ul {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 530px) {
-    h2 {
-        font-size: 2.5em;
-    }
-
-    p, label {
-        font-size: 1.4em;
-    }
-
-    form #contact {
-        flex-direction: column;
-
-    }
-    form #contact input, form #contact textarea {
-        width: 100%;
-    }
-    form #contact #identity, form #contact #message{
-        width : 100%;
-    }
-
-    .content div#presentation figure {
-        display : none;
-    }
-
-
 }

@@ -1,0 +1,67 @@
+@media screen and (max-width: 800px) {
+    .realisations {
+        margin : 0px;
+        display : flex;
+        flex-direction: column;
+    }
+
+    .rea {
+        width :100%;
+        margin-bottom: 20px;
+    }
+
+    #mes_realisations + p {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header nav #menu-burger {
+        display: block;
+    }
+
+    .cvBloc ul li {
+        margin-left: 6%;
+    }
+
+    header nav ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    h2 {
+        font-size: 2.5em;
+    }
+
+    p, label {
+        font-size: 1.4em;
+    }
+
+    form #contact {
+        flex-direction: column;
+
+    }
+
+    form #contact input, form #contact textarea {
+        width: 100%;
+    }
+
+    form #contact #identity, form #contact #message{
+        width : 100%;
+    }
+
+    .content div#presentation figure {
+        display : none;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        height : 66px;
+   }
+
+   footer p {
+        margin-top: 8px;
+   }
+
+}
